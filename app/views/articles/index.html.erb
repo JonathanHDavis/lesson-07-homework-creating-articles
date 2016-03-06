@@ -1,0 +1,14 @@
+<h1>Articles</h1>
+
+<%= link_to "Post New Article Here", new_article_path %>
+
+<% @articles.each do |article| %>
+  <p>
+    <span><%= article.title %></span>
+  </p>
+
+  <p>
+    <span><%= article.body %></span>
+  </p>
+<% end %>
+

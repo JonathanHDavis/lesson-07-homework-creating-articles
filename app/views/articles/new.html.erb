@@ -1,0 +1,15 @@
+<h1>New Article</h1>
+
+<!-- our new character form is below-->
+
+<%= form_for @article do |a| %>
+
+  <%= a.text_field :title, placeholder: "Article Title" %>
+  <br>
+
+  <%= a.text_field :body, placeholder: "Article Text" %>
+  <br>
+
+  <%= a.submit "Post Article" %>
+
+<% end %>
